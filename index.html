@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<body>
+<p>Greetings. To install the hax.js into your Propane for loads o laughs and hilarity, put this in
+    <code>~/Library/Application\ Support/Propane/unsupported/caveatPatchor.js</code>:</p>
+
+<pre>
+    var head = $$('head')[0];
+    if (head)
+    {
+        var script = new Element('script', { type: 'text/javascript', src: 'http://chrismo.github.com/propane/hax.js?' + new Date().getTime() });
+        head.appendChild(script);
+    }
+</pre>
+
+<p>It's only sound drops now - go <a href="hax.js">here</a> to see the regexs available.</p>
+
+<p><a href="https://github.com/chrismo/propane/tree/gh-pages">Source here</a></p>
+
+<p><a href="jasmine-standalone-1.2.0/SpecRunner.html">hax tests</a></p>
+</body>
+</html>
