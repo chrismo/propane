@@ -52,11 +52,13 @@ function DropMachine(library) {
       [/#cigs/i, "https://dl.dropbox.com/s/86zft7pfuror25y/Latarian_Smokes_Wif_Cigarettes_-_.mp3"],
       [/#die/i, "https://dl.dropbox.com/s/e6h8ut56og70pog/Die%21_-_.mp3"],
       [/#nobs/i, "https://dl.dropbox.com/s/o5m0ny2kd49i3wj/Don%27t_Need_Your_BS%21%21%21_-_.mp3"],
-      [/bieber/i, "https://dl.dropbox.com/s/mw8cpr6nrv8mmxm/beiber.sobleep.mp3"],
+      [/b[ie]+ber/i, "https://dl.dropbox.com/s/mw8cpr6nrv8mmxm/beiber.sobleep.mp3"],
       [/#zackly/i, "https://dl.dropbox.com/s/1s2qs9aa38w78r1/emmitt.h.zackly.mp3"],
       [/#poopoo/i, "https://dl.dropbox.com/s/ku3p4aywjirv63q/emmitt-d.poopoo2.mp3"],
       [/#flyingmonkey/i, "https://dl.dropbox.com/s/rxe3mal9v1v2tat/flying.monkey.what.is.he.going.to.say.mp3"],
-      [/nosense/i, "https://dl.dropbox.com/s/zhcw7c66i97hcq3/obro.thatdontmakenosense.mp3"],
+      [/no.?sense/i, "https://dl.dropbox.com/s/zhcw7c66i97hcq3/obro.thatdontmakenosense.mp3"],
+      [/\byolo\b/i, "https://dl.dropbox.com/s/133mtnwhh6epua7/yolo.mp3"],
+      [/website/i, "https://dl.dropbox.com/s/jyksfd317yqmyr9/Between_Two_Ferns_w__Jon_Hamm_Do_You_Like_Websites_-_Galifianakis.mp3"],
 
       // old spice
       [/#animals/i, "https://dl.dropbox.com/s/6m61cwbfyvfgtyz/animals.mp3"],
