@@ -59,6 +59,7 @@ function DropMachine(library) {
       [/no.?sense/i, "https://dl.dropbox.com/s/zhcw7c66i97hcq3/obro.thatdontmakenosense.mp3"],
       [/\byolo\b/i, "https://dl.dropbox.com/s/133mtnwhh6epua7/yolo.mp3"],
       [/website/i, "https://dl.dropbox.com/s/jyksfd317yqmyr9/Between_Two_Ferns_w__Jon_Hamm_Do_You_Like_Websites_-_Galifianakis.mp3"],
+      [/#shutup/i, "https://www.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3"],
 
       // old spice
       [/#animals/i, "https://dl.dropbox.com/s/6m61cwbfyvfgtyz/animals.mp3"],
@@ -76,7 +77,19 @@ function DropMachine(library) {
       [/#inconc..vable/i, "https://dl.dropbox.com/s/a0yu8dah8f5zetj/inconceivable.mp3"],
       [/#thatword/i, "https://dl.dropbox.com/s/0gqo74p78856dvf/thatword.mp3"],
       [/\binconc..vable\b/i, "https://dl.dropbox.com/s/0gqo74p78856dvf/thatword.mp3"],
-      [/#sumup/i, "https://dl.dropbox.com/s/3j0oxph6oh30tft/sumup.mp3"]
+      [/#sumup/i, "https://dl.dropbox.com/s/3j0oxph6oh30tft/sumup.mp3"],
+
+      // much ado about nothing
+      [/#youtakepleasure/i, "https://www.dropbox.com/s/p50br4sdj6wlvzb/maan.you.take.pleasure.in.msg.mp3"],
+      [/#youhavenostomach/i, "https://www.dropbox.com/s/y2qur0c73telhy7/maan.you.have.no.stomach.mp3"],
+      [/#yea/i, "https://www.dropbox.com/s/jsd09zhhcvrudy7/maan.yea.mp3"],
+      // [/#againstmywill/i, "https://www.dropbox.com/s/6a9n5q7vjisjfmd/maan.she.against.my.will.mp3"],
+      [/#thankyouforpain/i, "https://www.dropbox.com/s/uwa9ysqi69ynxra/maan.i.thank.you.for.your.pains.mp3"],
+      [/#againstmywill/i, "https://www.dropbox.com/s/8rg26yjr3zfq7z8/maan.he.against.my.will.mp3"],
+      [/#ha/, "https://www.dropbox.com/s/acpwb3l6x3vvva2/maan.ha.mp3"],
+      [/#fareyouwell/i, "https://www.dropbox.com/s/d2py2u35507t32e/maan.fare.you.well.mp3"],
+      [/#doublemeaning/i, "https://www.dropbox.com/s/g6y0dqq81kpkcb6/maan.double.meaning.mp3"],
+      [/#ahaha/i, "https://www.dropbox.com/s/l0tk13ldfvpolrh/maan.ahaha.mp3"]
     ];
   } else {
     this.library = library;
