@@ -60,6 +60,7 @@ function DropMachine(library) {
       [/\byolo\b/i, "https://dl.dropbox.com/s/133mtnwhh6epua7/yolo.mp3"],
       [/website/i, "https://dl.dropbox.com/s/jyksfd317yqmyr9/Between_Two_Ferns_w__Jon_Hamm_Do_You_Like_Websites_-_Galifianakis.mp3"],
       [/#shutup/i, "https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3"],
+      [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
 
       // old spice
       [/#animals/i, "https://dl.dropbox.com/s/6m61cwbfyvfgtyz/animals.mp3"],
@@ -80,6 +81,8 @@ function DropMachine(library) {
       [/#sumup/i, "https://dl.dropbox.com/s/3j0oxph6oh30tft/sumup.mp3"],
 
       // much ado about nothing
+
+      // http://www.youtube.com/watch?v=82dYxF3sA8o - i'm an arse
       [/#youtakepleasure/i, "https://dl.dropbox.com/s/p50br4sdj6wlvzb/maan.you.take.pleasure.in.msg.mp3"],
       [/#youhavenostomach/i, "https://dl.dropbox.com/s/y2qur0c73telhy7/maan.you.have.no.stomach.mp3"],
       [/#yea/i, "https://dl.dropbox.com/s/jsd09zhhcvrudy7/maan.yea.mp3"],
