@@ -61,7 +61,7 @@ function DropMachine(library) {
       [/no.?sense/i, "https://dl.dropbox.com/s/zhcw7c66i97hcq3/obro.thatdontmakenosense.mp3"],
       [/\byolo\b/i, "https://dl.dropbox.com/s/133mtnwhh6epua7/yolo.mp3"],
       [/website/i, "https://dl.dropbox.com/s/jyksfd317yqmyr9/Between_Two_Ferns_w__Jon_Hamm_Do_You_Like_Websites_-_Galifianakis.mp3"],
-      [/(#shutup|shut up)/i, ["https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3", "https://dl.dropbox.com/s/9rrg4mvr2o53nbn/bullw.boris.shutup.wav"]],
+      [/(#shutup|shut up)/i, ["https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3", "https://dl.dropbox.com/s/qnoryv45y7gfgv6/bullw.boris.shutup.mp3"]],
       [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
       [/#markthat/i, "https://dl.dropbox.com/s/9qq94gnwles3chw/Between_Two_Ferns_w__Jon_Hamm_Mark_That_Under..._%28_-_Galifianakis.mp3"],
 
@@ -98,13 +98,13 @@ function DropMachine(library) {
       [/#ahaha/i, "https://dl.dropbox.com/s/l0tk13ldfvpolrh/maan.ahaha.mp3"],
 
       // bullwinkle
-      [/#besick/i, "https://dl.dropbox.com/s/rksbns5zascxqmo/bullw.besick.wav"],
-      [/impossible/i, "https://dl.dropbox.com/s/ub633spu99u247l/bullw.boris.impossible.wav"],
-      [/#curses/i, "https://dl.dropbox.com/s/7elvuyx25xat8ji/bullw.curses2.wav"],
-      [/#hooboy/i, "https://dl.dropbox.com/s/yi5epaztfekl34b/bullw.hooboy.wav"],
-      [/keen/i, "https://dl.dropbox.com/s/4d4ze589d2c2e98/bullw.keenidea.wav"],
-      [/(#knowitall|know it all)/i, "https://dl.dropbox.com/s/dugwex2uj9qypa8/bullw.knowall.wav"],
-      [/obviously/i, "https://dl.dropbox.com/s/60zs0h0sdif8srv/bullw.obviusly.wav"],
+      [/#besick/i, "https://dl.dropbox.com/s/4g07wg4y41oujah/bullw.besick.mp3"],
+      [/impossible/i, "https://dl.dropbox.com/s/65absxigxv5su28/bullw.boris.impossible.mp3"],
+      [/#curses/i, "https://dl.dropbox.com/s/vj7ct8etrpz6n2x/bullw.curses2.mp3"],
+      [/#hooboy/i, "https://dl.dropbox.com/s/7z6tr1k93sokcbx/bullw.hooboy.mp3"],
+      [/keen/i, "https://dl.dropbox.com/s/vpbop1kq50wnrgz/bullw.keenidea.mp3"],
+      [/(#knowitall|know it all)/i, "https://dl.dropbox.com/s/6lrp47mpzogcuyw/bullw.knowall.mp3"],
+      [/obviously/i, "https://dl.dropbox.com/s/07b2oxoir0avy22/bullw.obviously.mp3"],
       [/(#neverworks|never works)/i, "https://dl.dropbox.com/s/zl692ugzfv3e4s6/bullw.but.that.trick.never.works.mp3"]
 
     ];
