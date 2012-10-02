@@ -104,7 +104,8 @@ function DropMachine(library) {
       [/#hooboy/i, "https://dl.dropbox.com/s/yi5epaztfekl34b/bullw.hooboy.wav"],
       [/keen/i, "https://dl.dropbox.com/s/4d4ze589d2c2e98/bullw.keenidea.wav"],
       [/(#knowitall|know it all)/i, "https://dl.dropbox.com/s/dugwex2uj9qypa8/bullw.knowall.wav"],
-      [/obviously/i, "https://dl.dropbox.com/s/60zs0h0sdif8srv/bullw.obviusly.wav"]
+      [/obviously/i, "https://dl.dropbox.com/s/60zs0h0sdif8srv/bullw.obviusly.wav"],
+      [/(#neverworks|never works)/i, "https://dl.dropbox.com/s/zl692ugzfv3e4s6/bullw.but.that.trick.never.works.mp3"]
 
     ];
   } else {
