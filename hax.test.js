@@ -37,8 +37,9 @@ describe("DropMachine", function () {
         [/foo/, 'foo.mp3']
       ]
       var machine = new DropMachine(library);
-      var url = machine.matchMessage([new FauxMessage('foo')]);
-      expect(url).toBe('foo.mp3');
+      expect(machine.matchMessage([new FauxMessage('foo')])).toBe('foo.mp3');
+      // called twice to ensure rotation code doesn't screw up singles
+      expect(machine.matchMessage([new FauxMessage('foo')])).toBe('foo.mp3');
     }),
 
     it("returns null on no match", function () {
@@ -48,6 +49,16 @@ describe("DropMachine", function () {
       var machine = new DropMachine(library);
       var url = machine.matchMessage([new FauxMessage('bar')]);
       expect(url).toBeNull();
+    }),
+
+    it("cycles through array of sounds on same match", function() {
+      var library = [
+        [/foo/, ['bar.mp3', 'quux.mp3']]
+      ]
+      var machine = new DropMachine(library);
+      expect(machine.matchMessage([new FauxMessage('foo')])).toBe('bar.mp3');
+      expect(machine.matchMessage([new FauxMessage('foo')])).toBe('quux.mp3');
+      expect(machine.matchMessage([new FauxMessage('foo')])).toBe('bar.mp3');
     })
   })
 });

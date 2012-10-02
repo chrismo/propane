@@ -14,6 +14,8 @@ function DropMachine(library) {
       [/#laugh/i, "https://dl.dropbox.com/s/47jkw4qaxesuhqz/deion.laugh.mp3"],
       [/#ohwhataday/i, "https://dl.dropbox.com/s/n21i4szu4wwcqnr/deion.oh.what.a.day.mp3"],
       [/#phone/i, "https://dl.dropbox.com/s/ch1izhow7gm0qg3/deion.oh.a.phone.1.is.ringing.mp3"],
+      [/(#dontknow|what is that)/i, "https://dl.dropbox.com/s/afd2sevxva4mcnj/deiondontknow.wav"],
+      [/(#thous|millions|thousands|\d+k|\d+mb)/i, "https://dl.dropbox.com/s/hg605w0cgb6kxzs/deion1000.wav"],
 
       // airplane
       [/#jackingmeup/i, "https://dl.dropbox.com/s/d7bfr07iyr28eem/ap.jive.jacking.me.up.mp3"],
@@ -59,8 +61,9 @@ function DropMachine(library) {
       [/no.?sense/i, "https://dl.dropbox.com/s/zhcw7c66i97hcq3/obro.thatdontmakenosense.mp3"],
       [/\byolo\b/i, "https://dl.dropbox.com/s/133mtnwhh6epua7/yolo.mp3"],
       [/website/i, "https://dl.dropbox.com/s/jyksfd317yqmyr9/Between_Two_Ferns_w__Jon_Hamm_Do_You_Like_Websites_-_Galifianakis.mp3"],
-      [/#shutup/i, "https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3"],
+      [/(#shutup|shut up)/i, ["https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3", "https://dl.dropbox.com/s/9rrg4mvr2o53nbn/bullw.boris.shutup.wav"]],
       [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
+      [/#markthat/i, "https://dl.dropbox.com/s/9qq94gnwles3chw/Between_Two_Ferns_w__Jon_Hamm_Mark_That_Under..._%28_-_Galifianakis.mp3"],
 
       // old spice
       [/#animals/i, "https://dl.dropbox.com/s/6m61cwbfyvfgtyz/animals.mp3"],
@@ -92,7 +95,17 @@ function DropMachine(library) {
       [/#ha/, "https://dl.dropbox.com/s/acpwb3l6x3vvva2/maan.ha.mp3"],
       [/#fareyouwell/i, "https://dl.dropbox.com/s/d2py2u35507t32e/maan.fare.you.well.mp3"],
       [/#doublemeaning/i, "https://dl.dropbox.com/s/g6y0dqq81kpkcb6/maan.double.meaning.mp3"],
-      [/#ahaha/i, "https://dl.dropbox.com/s/l0tk13ldfvpolrh/maan.ahaha.mp3"]
+      [/#ahaha/i, "https://dl.dropbox.com/s/l0tk13ldfvpolrh/maan.ahaha.mp3"],
+
+      // bullwinkle
+      [/#besick/i, "https://dl.dropbox.com/s/rksbns5zascxqmo/bullw.besick.wav"],
+      [/impossible/i, "https://dl.dropbox.com/s/ub633spu99u247l/bullw.boris.impossible.wav"],
+      [/#curses/i, "https://dl.dropbox.com/s/7elvuyx25xat8ji/bullw.curses2.wav"],
+      [/#hooboy/i, "https://dl.dropbox.com/s/yi5epaztfekl34b/bullw.hooboy.wav"],
+      [/keen/i, "https://dl.dropbox.com/s/4d4ze589d2c2e98/bullw.keenidea.wav"],
+      [/(#knowitall|know it all)/i, "https://dl.dropbox.com/s/dugwex2uj9qypa8/bullw.knowall.wav"],
+      [/obviously/i, "https://dl.dropbox.com/s/60zs0h0sdif8srv/bullw.obviusly.wav"]
+
     ];
   } else {
     this.library = library;
@@ -106,9 +119,14 @@ DropMachine.prototype = {
       for (var j = 0; j < messages.length; j++) {
         var ary = this.library[i];
         var regex = ary[0];
-        var url = ary[1];
+        var urls = [ary[1]].flatten();
+        var url = urls[0];
         var message = messages[j];
         if (message.bodyElement().innerText.match(regex)) {
+          // rotate lists of urls
+          urls.shift();
+          urls.push(url);
+          this.library[i][1] = urls.clone();
           return url;
         }
       }
