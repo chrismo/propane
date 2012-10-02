@@ -116,6 +116,7 @@ function DropMachine(library) {
 
 DropMachine.prototype = {
   matchMessage:function (messages) {
+    var matchedUrls = [];
     for (var i = 0; i < this.library.length; i++) {
       for (var j = 0; j < messages.length; j++) {
         var ary = this.library[i];
@@ -128,13 +129,27 @@ DropMachine.prototype = {
           urls.shift();
           urls.push(url);
           this.library[i][1] = urls.clone();
-          return url;
+          matchedUrls.push(url);
         }
       }
     }
-    return null;
+    return matchedUrls;
+  },
+
+  playUrls:function (urls) {
+    for (var i = 0; i < urls.length; i++) {
+      var url = urls[i];
+      if (url != null) {
+        var audio = new Audio(url);
+        audio.play();
+      }
+    }
+  },
+
+  playMatches:function (messages) {
+    this.playUrls(this.matchMessage(messages));
   }
-}
+};
 
 Campfire.DropMachine = Class.create({
   initialize:function (chat) {
@@ -143,11 +158,7 @@ Campfire.DropMachine = Class.create({
   },
 
   onMessagesInserted:function (messages) {
-    var url = this.dropMachine.matchMessage(messages);
-    if (url != null) {
-      var audio = new Audio(url);
-      audio.play();
-    }
+    this.dropMachine.playMatches(messages);
   }
 });
 
