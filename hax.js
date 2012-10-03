@@ -136,18 +136,28 @@ DropMachine.prototype = {
     return matchedUrls;
   },
 
-  playUrls:function (urls) {
-    for (var i = 0; i < urls.length; i++) {
-      var url = urls[i];
-      if (url != null) {
-        var audio = new Audio(url);
-        audio.play();
-      }
-    }
-  },
-
   playMatches:function (messages) {
-    this.playUrls(this.matchMessage(messages));
+    new AudioPlayer(this.matchMessage(messages)).playAll();
+  }
+};
+
+function AudioPlayer(urls) {
+  this.urls = [urls].flatten();
+  this.audio = new Audio();
+}
+
+AudioPlayer.prototype = {
+  playAll:function () {
+    if ((this.audio.ended) || (this.audio.src == "")) {
+      var nextUrl = this.urls.shift();
+      if (nextUrl != undefined) {
+        this.audio.src = nextUrl;
+        this.audio.play();
+        setTimeout(this.playAll.bind(this), 50);
+      }
+    } else {
+      setTimeout(this.playAll.bind(this), 50);
+    }
   }
 };
 
