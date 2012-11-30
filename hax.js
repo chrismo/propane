@@ -15,7 +15,7 @@ function DropMachine(library) {
       [/#ohwhataday/i, "https://dl.dropbox.com/s/n21i4szu4wwcqnr/deion.oh.what.a.day.mp3"],
       [/#phone/i, "https://dl.dropbox.com/s/ch1izhow7gm0qg3/deion.oh.a.phone.1.is.ringing.mp3"],
       [/(#dontknow|what is that)/i, "https://dl.dropbox.com/s/afd2sevxva4mcnj/deiondontknow.wav"],
-      [/(#thous|millions|thousands|\d+k|\d+mb)/i, "https://dl.dropbox.com/s/hg605w0cgb6kxzs/deion1000.wav"],
+      [/(#thous|billion|million|thousand|\d+k|\d+mb|\d+gb)/i, "https://dl.dropbox.com/s/hg605w0cgb6kxzs/deion1000.wav"],
 
       // airplane
       [/#jackingmeup/i, "https://dl.dropbox.com/s/d7bfr07iyr28eem/ap.jive.jacking.me.up.mp3"],
