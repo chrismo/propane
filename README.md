@@ -1,4 +1,4 @@
-To add my sound drops to Propane, add this to caveatPatchor.js:
+To add my sound drops to Propane, add this to [caveatPatchor.js](https://gist.github.com/825404):
 
 ```
     var head = $$('head')[0];
