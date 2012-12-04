@@ -64,6 +64,9 @@ function DropMachine(library) {
       [/(#shutup|shut up)/i, ["https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3", "https://dl.dropbox.com/s/qnoryv45y7gfgv6/bullw.boris.shutup.mp3"]],
       [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
       [/#markthat/i, "https://dl.dropbox.com/s/9qq94gnwles3chw/Between_Two_Ferns_w__Jon_Hamm_Mark_That_Under..._%28_-_Galifianakis.mp3"],
+      [/old man/i, "https://dl.dropbox.com/s/cfutlb2gwtiwssc/granpa.simpson.hey.everybody.mp3"],
+      [/dickety|kaiser|twenty|\b20\b/i, "https://dl.dropbox.com/s/fod6czcuopi14fu/granpa.simpson.the.kaiser.mp3"],
+      [/#onion|fashion/i, "https://dl.dropbox.com/s/v738k8ip157hrxe/granpa.simpson.onion.belt.mp3"],
 
       // old spice
       [/#animals/i, "https://dl.dropbox.com/s/6m61cwbfyvfgtyz/animals.mp3"],
