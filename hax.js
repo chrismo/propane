@@ -64,6 +64,8 @@ function DropMachine(library) {
       [/(#shutup|shut up)/i, ["https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3", "https://dl.dropbox.com/s/qnoryv45y7gfgv6/bullw.boris.shutup.mp3"]],
       [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
       [/#markthat/i, "https://dl.dropbox.com/s/9qq94gnwles3chw/Between_Two_Ferns_w__Jon_Hamm_Mark_That_Under..._%28_-_Galifianakis.mp3"],
+
+      // simpsons
       [/old man/i, "https://dl.dropbox.com/s/cfutlb2gwtiwssc/granpa.simpson.hey.everybody.mp3"],
       [/dickety|kaiser|twenty/i, "https://dl.dropbox.com/s/fod6czcuopi14fu/granpa.simpson.the.kaiser.mp3"],
       [/#onion|fashion/i, "https://dl.dropbox.com/s/v738k8ip157hrxe/granpa.simpson.onion.belt.mp3"],
@@ -108,7 +110,10 @@ function DropMachine(library) {
       [/keen/i, "https://dl.dropbox.com/s/vpbop1kq50wnrgz/bullw.keenidea.mp3"],
       [/(#knowitall|know it all)/i, "https://dl.dropbox.com/s/6lrp47mpzogcuyw/bullw.knowall.mp3"],
       [/obviously/i, "https://dl.dropbox.com/s/07b2oxoir0avy22/bullw.obviously.mp3"],
-      [/(#neverworks|never works)/i, "https://dl.dropbox.com/s/zl692ugzfv3e4s6/bullw.but.that.trick.never.works.mp3"]
+      [/(#neverworks|never works)/i, "https://dl.dropbox.com/s/zl692ugzfv3e4s6/bullw.but.that.trick.never.works.mp3"],
+
+      // star wars
+      [/impressive/i, "https://dl.dropbox.com/s/dw5pexa9yxfr65e/vader.impressive.mp3"]
 
     ];
   } else {
