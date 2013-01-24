@@ -64,6 +64,7 @@ function DropMachine(library) {
       [/(#shutup|shut up)/i, ["https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3", "https://dl.dropbox.com/s/qnoryv45y7gfgv6/bullw.boris.shutup.mp3"]],
       [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
       [/#markthat/i, "https://dl.dropbox.com/s/9qq94gnwles3chw/Between_Two_Ferns_w__Jon_Hamm_Mark_That_Under..._%28_-_Galifianakis.mp3"],
+      [/(blew|blow)/i, "https://dl.dropbox.com/s/v19wh2qltb99ke9/hes.blown.it.mp3"], // http://www.youtube.com/watch?feature=player_embedded&v=hYlKQd4pk7k
 
       // simpsons
       [/old man/i, "https://dl.dropbox.com/s/cfutlb2gwtiwssc/granpa.simpson.hey.everybody.mp3"],
@@ -114,7 +115,6 @@ function DropMachine(library) {
 
       // star wars
       [/impressive/i, "https://dl.dropbox.com/s/dw5pexa9yxfr65e/vader.impressive.mp3"]
-
     ];
   } else {
     this.library = library;
