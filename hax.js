@@ -15,7 +15,7 @@ function DropMachine(library) {
       [/#ohwhataday/i, "https://dl.dropbox.com/s/n21i4szu4wwcqnr/deion.oh.what.a.day.mp3"],
       [/#phone/i, "https://dl.dropbox.com/s/ch1izhow7gm0qg3/deion.oh.a.phone.1.is.ringing.mp3"],
       [/(#dontknow|what is that)/i, "https://dl.dropbox.com/s/afd2sevxva4mcnj/deiondontknow.wav"],
-      [/(#thous|billion|million|thousand|\d+k|\d+mb|\d+gb)/i, "https://dl.dropbox.com/s/hg605w0cgb6kxzs/deion1000.wav"],
+      [/(#thous|million|thousand|\d+k)/i, "https://dl.dropbox.com/s/hg605w0cgb6kxzs/deion1000.wav"],
 
       // airplane
       [/#jackingmeup/i, "https://dl.dropbox.com/s/d7bfr07iyr28eem/ap.jive.jacking.me.up.mp3"],
@@ -65,6 +65,7 @@ function DropMachine(library) {
       [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
       [/#markthat/i, "https://dl.dropbox.com/s/9qq94gnwles3chw/Between_Two_Ferns_w__Jon_Hamm_Mark_That_Under..._%28_-_Galifianakis.mp3"],
       [/(blew|blow)/i, "https://dl.dropbox.com/s/v19wh2qltb99ke9/hes.blown.it.mp3"], // http://www.youtube.com/watch?feature=player_embedded&v=hYlKQd4pk7k
+      [/opinion/i, "https://dl.dropbox.com/s/y77xr0kd4sgl8o7/bigl.your.opinion.mp3"],
 
       // simpsons
       [/old man/i, "https://dl.dropbox.com/s/cfutlb2gwtiwssc/granpa.simpson.hey.everybody.mp3"],
@@ -84,10 +85,9 @@ function DropMachine(library) {
       [/#wat/i, "https://dl.dropbox.com/s/00xis65y9jpj6rb/wat.mp3"],
 
       // princess bride
-      [/#inconc..vable/i, "https://dl.dropbox.com/s/a0yu8dah8f5zetj/inconceivable.mp3"],
-      [/#thatword/i, "https://dl.dropbox.com/s/0gqo74p78856dvf/thatword.mp3"],
-      [/\binconc..vable\b/i, "https://dl.dropbox.com/s/0gqo74p78856dvf/thatword.mp3"],
-      [/#sumup/i, "https://dl.dropbox.com/s/3j0oxph6oh30tft/sumup.mp3"],
+      [/(#thatword|that word)/i, "https://dl.dropbox.com/s/0gqo74p78856dvf/thatword.mp3"],
+      [/\binconc..vable\b/i, ["https://dl.dropbox.com/s/a0yu8dah8f5zetj/inconceivable.mp3", "https://dl.dropbox.com/s/a0yu8dah8f5zetj/inconceivable.mp3", "https://dl.dropbox.com/s/0gqo74p78856dvf/thatword.mp3"]],
+      [/(#sumup|sum up)/i, "https://dl.dropbox.com/s/3j0oxph6oh30tft/sumup.mp3"],
 
       // much ado about nothing
 
