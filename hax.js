@@ -4,7 +4,7 @@ function DropMachine(library) {
       // #isthatrain
 
       // nfl voice over guy outtakes
-      [/(#ohshoot|oh shoot)/i, "https://dl.dropbox.com/s/ciswtj3owz17xry/nfl.films.oh.shoot.mp3"],
+      [/(#ohshoot|oh shoot|^shoot$)/i, "https://dl.dropbox.com/s/ciswtj3owz17xry/nfl.films.oh.shoot.mp3"],
       [/(#meaculpa|mea culpa)/i, "https://dl.dropbox.com/s/s2xnjnue4twrem8/nfl.films.mea.culpa.mp3"],
       [/(#usob|\bsob\b)/i, "https://dl.dropbox.com/s/p7p97hwg1ndxzte/nfl.films.you.sobleep.mp3"],
 
@@ -12,36 +12,47 @@ function DropMachine(library) {
       [/#trabtree/i, "https://dl.dropbox.com/s/7xcm66h40ox0vxm/deion.michael.trabtree.mp3"],
       [/(#hello|^hello)/i, "https://dl.dropbox.com/s/i0lhpz2hqyb38ix/deion.hello.mp3"],
       [/#laugh/i, "https://dl.dropbox.com/s/47jkw4qaxesuhqz/deion.laugh.mp3"],
-      [/#ohwhataday/i, "https://dl.dropbox.com/s/n21i4szu4wwcqnr/deion.oh.what.a.day.mp3"],
-      [/#phone/i, "https://dl.dropbox.com/s/ch1izhow7gm0qg3/deion.oh.a.phone.1.is.ringing.mp3"],
+      [/(#ohwhataday|good morning|^morning$)/i, "https://dl.dropbox.com/s/n21i4szu4wwcqnr/deion.oh.what.a.day.mp3"],
+      [/(#phone|call me)/i, "https://dl.dropbox.com/s/ch1izhow7gm0qg3/deion.oh.a.phone.1.is.ringing.mp3"],
       [/(#dontknow|what is that)/i, "https://dl.dropbox.com/s/afd2sevxva4mcnj/deiondontknow.wav"],
       [/(#thous|million|thousand|\d+k)/i, "https://dl.dropbox.com/s/hg605w0cgb6kxzs/deion1000.wav"],
 
       // airplane
-      [/#jackingmeup/i, "https://dl.dropbox.com/s/d7bfr07iyr28eem/ap.jive.jacking.me.up.mp3"],
+      [/(#jackingmeup|feel.*sick)/i, "https://dl.dropbox.com/s/d7bfr07iyr28eem/ap.jive.jacking.me.up.mp3"],
       [/(#hangloose|hang loose)/i, "https://dl.dropbox.com/s/b3xxhuziob35foq/ap.jive.just.hang.loose.mp3"],
       [/(#youknowwhattheysay|you know what they say)/i, "https://dl.dropbox.com/s/9pw2h5zwy37mkd5/ap.jive.you.know.what.they.say.mp3"],
       [/#nobrains/i, "https://dl.dropbox.com/s/utxzgky2i3obluw/ap.jive.got.no.brains.mp3"],
       [/#bigmomma/i, "https://dl.dropbox.com/s/m9h3dov1t59w3a6/ap.jive.big.momma.mp3"],
       [/#canthang/i, "https://dl.dropbox.com/s/lnvftnllbk9i397/ap.jive.cant.hang.mp3"],
-      [/#cutmesomeslack/i, "https://dl.dropbox.com/s/yuve2zrmpkeju94/ap.jive.cut.me.some.slack.mp3"],
+      [/(#cutmesomeslack|slack)/i, "https://dl.dropbox.com/s/yuve2zrmpkeju94/ap.jive.cut.me.some.slack.mp3"],
       [/(#ispeakjive|jive)/i, "https://dl.dropbox.com/s/xxa078binp2w9xh/ap.jive.i.speak.jive.mp3"],
       [/surely/i, "https://dl.dropbox.com/s/09arfb7of2zu9qy/ap.surely.mp3"],
 
       // gijoe
       [/wth/i, "https://dl.dropbox.com/s/c9fob2ycdvfzmzs/gipsa.bm.ehhhh.what.the.hell.mp3"],
-      [/#go/i, "https://dl.dropbox.com/s/rzita4po56g9p4w/gipsa.bm.go.mp3"],
+      [/(#go|^go$)/i, "https://dl.dropbox.com/s/rzita4po56g9p4w/gipsa.bm.go.mp3"],
       [/(#bodymassage|massage)/i, "https://dl.dropbox.com/s/3a3qfizvib17dro/gipsa.bm.who.wants.a.body.massage.mp3"],
       [/(#hellno|hell no)/i, "https://dl.dropbox.com/s/9a018kotphwboz0/gipsa.compy.hell.no.whats.up.dog.mp3"],
-      [/#idontknow/i, "https://dl.dropbox.com/s/nh6334poddfqqeh/gipsa.compy.i.dont.know.much.about.computers.mp3"],
-      [/#stopdown/i, "https://dl.dropbox.com/s/3ezu7fzl0amkme5/gipsa.compy.stop.all.downloading.mp3"],
-      [/#smellgood/i, "https://dl.dropbox.com/s/g1miu3nu1j2zrvd/gipsa.pcs.my.god.smelled.good.mp3"],
+      [/(#idontknow|i don.t know)/i, "https://dl.dropbox.com/s/nh6334poddfqqeh/gipsa.compy.i.dont.know.much.about.computers.mp3"],
+      [/(#stopdown|download)/i, "https://dl.dropbox.com/s/3ezu7fzl0amkme5/gipsa.compy.stop.all.downloading.mp3"],
+      [/(#smellgood|smell.*good)/i, "https://dl.dropbox.com/s/g1miu3nu1j2zrvd/gipsa.pcs.my.god.smelled.good.mp3"],
       [/#pcs/i, "https://dl.dropbox.com/s/klmzj0j56sm011s/gipsa.pcs.pork.chop.sandwiches.mp3"],
       [/#yeahdo/i, "https://dl.dropbox.com/s/8ihum9ulgcjeo3q/gipsa.pcs.yeah.do.mp3"],
       [/#younotcookin/i, "https://dl.dropbox.com/s/25cylv37aagvqgw/gipsa.pcs.you.not.cooking.mp3"],
+      [/(breakfast|lunch))/i, ["https://dl.dropbox.com/s/klmzj0j56sm011s/gipsa.pcs.pork.chop.sandwiches.mp3", 
+                               "https://dl.dropbox.com/s/25cylv37aagvqgw/gipsa.pcs.you.not.cooking.mp3",
+                               "https://dl.dropbox.com/s/g1miu3nu1j2zrvd/gipsa.pcs.my.god.smelled.good.mp3",
+                               "https://dl.dropbox.com/s/lkmsbrb61th41ep/nap.lucky.mp3",
+                               "https://dl.dropbox.com/s/aw1be1g8cmmh71y/sausages.mp3"]],
+      [/dinner/i, ["https://dl.dropbox.com/s/8rg26yjr3zfq7z8/maan.he.against.my.will.mp3",
+                   "https://dl.dropbox.com/s/klmzj0j56sm011s/gipsa.pcs.pork.chop.sandwiches.mp3", 
+                   "https://dl.dropbox.com/s/25cylv37aagvqgw/gipsa.pcs.you.not.cooking.mp3",
+                   "https://dl.dropbox.com/s/g1miu3nu1j2zrvd/gipsa.pcs.my.god.smelled.good.mp3",
+                   "https://dl.dropbox.com/s/lkmsbrb61th41ep/nap.lucky.mp3",
+                   "https://dl.dropbox.com/s/aw1be1g8cmmh71y/sausages.mp3"]],
 
       // napoleon dynamite
-      [/#lucky/i, "https://dl.dropbox.com/s/lkmsbrb61th41ep/nap.lucky.mp3"],
+      [/(#lucky|just got)/i, "https://dl.dropbox.com/s/lkmsbrb61th41ep/nap.lucky.mp3"],
       [/idiot/i, ["https://dl.dropbox.com/s/num2xiri6z3yrot/nap.Freakin.Idiot.mp3", "https://dl.dropbox.com/s/utxzgky2i3obluw/ap.jive.got.no.brains.mp3"]],
       [/#mountain/i, "https://dl.dropbox.com/s/9s9wt7tztyhc6o2/nap.themmountains.mp3"],
       [/college/i, "https://dl.dropbox.com/s/3k9nssr8irkeduy/nap.your.mom.goes.to.college.mp3"],
@@ -64,8 +75,9 @@ function DropMachine(library) {
       [/(#shutup|shut up)/i, ["https://dl.dropbox.com/s/cdfzrnyn3zasizp/sanford.shut.up.dummy.mp3", "https://dl.dropbox.com/s/qnoryv45y7gfgv6/bullw.boris.shutup.mp3"]],
       [/#vickit/i, "https://dl.dropbox.com/s/x49nmtd5gk4q6fz/vick.snap.mp3"],
       [/#markthat/i, "https://dl.dropbox.com/s/9qq94gnwles3chw/Between_Two_Ferns_w__Jon_Hamm_Mark_That_Under..._%28_-_Galifianakis.mp3"],
-      [/(blew|blow)/i, "https://dl.dropbox.com/s/v19wh2qltb99ke9/hes.blown.it.mp3"], // http://www.youtube.com/watch?feature=player_embedded&v=hYlKQd4pk7k
+      [/(blew|blown)/i, "https://dl.dropbox.com/s/v19wh2qltb99ke9/hes.blown.it.mp3"], // http://www.youtube.com/watch?feature=player_embedded&v=hYlKQd4pk7k
       [/opinion/i, "https://dl.dropbox.com/s/y77xr0kd4sgl8o7/bigl.your.opinion.mp3"],
+      [/( google |#google|lmgtfy)/i, "https://dl.dropbox.com/s/rtsz0yp9cb6dxoh/hannibal.google.mp3"], // Hannible (TV)
 
       // simpsons
       [/old man/i, "https://dl.dropbox.com/s/cfutlb2gwtiwssc/granpa.simpson.hey.everybody.mp3"],
