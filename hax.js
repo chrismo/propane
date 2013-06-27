@@ -29,7 +29,7 @@ function DropMachine(library) {
       [/surely/i, "https://dl.dropbox.com/s/09arfb7of2zu9qy/ap.surely.mp3"],
 
       // gijoe
-      [/wth/i, "https://dl.dropbox.com/s/c9fob2ycdvfzmzs/gipsa.bm.ehhhh.what.the.hell.mp3"],
+      [/\bwth\b|#wth/i, "https://dl.dropbox.com/s/c9fob2ycdvfzmzs/gipsa.bm.ehhhh.what.the.hell.mp3"],
       [/(^go$)/i, "https://dl.dropbox.com/s/rzita4po56g9p4w/gipsa.bm.go.mp3"],
       [/(#bodymassage|massage)/i, "https://dl.dropbox.com/s/3a3qfizvib17dro/gipsa.bm.who.wants.a.body.massage.mp3"],
       [/(#hellno|hell no)/i, "https://dl.dropbox.com/s/9a018kotphwboz0/gipsa.compy.hell.no.whats.up.dog.mp3"],
