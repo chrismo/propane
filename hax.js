@@ -78,7 +78,7 @@ function DropMachine(library) {
       [/(blew|blown)/i, "https://dl.dropbox.com/s/v19wh2qltb99ke9/hes.blown.it.mp3"], // http://www.youtube.com/watch?feature=player_embedded&v=hYlKQd4pk7k
       [/opinion/i, "https://dl.dropbox.com/s/y77xr0kd4sgl8o7/bigl.your.opinion.mp3"],
       [/( google |#google|lmgtfy)/i, "https://dl.dropbox.com/s/rtsz0yp9cb6dxoh/hannibal.google.mp3"], // Hannible (TV)
-      [/(um+|#stammer)/i, "https://dl.dropboxusercontent.com/s/c2ga7m5joeka8dm/jennifer.lawrence.stammer.mp3"],
+      [/(umm+|#stammer)/i, "https://dl.dropboxusercontent.com/s/c2ga7m5joeka8dm/jennifer.lawrence.stammer.mp3"],
 
       // simpsons
       [/old man/i, "https://dl.dropbox.com/s/cfutlb2gwtiwssc/granpa.simpson.hey.everybody.mp3"],
