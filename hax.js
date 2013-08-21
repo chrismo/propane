@@ -79,7 +79,7 @@ function DropMachine(library) {
       [/opinion/i, "https://dl.dropbox.com/s/y77xr0kd4sgl8o7/bigl.your.opinion.mp3"],
       [/( google |#google|lmgtfy)/i, "https://dl.dropbox.com/s/rtsz0yp9cb6dxoh/hannibal.google.mp3"], // Hannible (TV)
       [/(broke.?computer|#computersaysno)/i, "https://dl.dropboxusercontent.com/u/6926437/computer_says_no.mp3"],
-      [/(\bumm+|\bmmm+|\bhmm+|#stammer)/i, "https://dl.dropboxusercontent.com/s/c2ga7m5joeka8dm/jennifer.lawrence.stammer.mp3"],
+      [/(\bumm+|\bmmm+|#stammer)/i, "https://dl.dropboxusercontent.com/s/c2ga7m5joeka8dm/jennifer.lawrence.stammer.mp3"],
       [/bummer/i, "https://dl.dropboxusercontent.com/u/6926437/bummer.mp3"],
 
       // simpsons
