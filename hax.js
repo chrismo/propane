@@ -81,6 +81,7 @@ function DropMachine(library) {
       [/(broke.?computer|#computersaysno)/i, "https://dl.dropboxusercontent.com/u/6926437/computer_says_no.mp3"],
       [/(\bumm+|\bmmm+|#stammer)/i, "https://dl.dropboxusercontent.com/s/c2ga7m5joeka8dm/jennifer.lawrence.stammer.mp3"],
       [/bummer/i, "https://dl.dropboxusercontent.com/u/6926437/bummer.mp3"],
+      [/#goforlaunch/i, "https://dl.dropboxusercontent.com/s/iuzvmy77ox24dzw/a13.go.for.launch.long.mp3"],
 
       // simpsons
       [/old man/i, "https://dl.dropbox.com/s/cfutlb2gwtiwssc/granpa.simpson.hey.everybody.mp3"],
