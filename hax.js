@@ -131,6 +131,9 @@ function DropMachine(library) {
 
       // star wars
       [/impressive/i, "https://dl.dropbox.com/s/dw5pexa9yxfr65e/vader.impressive.mp3"]
+
+      // wilhelm scream 
+      [/scream|wilhelm/i, "https://dl.dropboxusercontent.com/u/6926437/WilhelmScream_vbr.mp3"]
     ];
   } else {
     this.library = library;
