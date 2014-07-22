@@ -1,5 +1,5 @@
 function DropMachine(library) {
-  if (undefined == library) {
+  if (undefined === library) {
     this.library = [
       // #isthatrain
 
@@ -130,7 +130,7 @@ function DropMachine(library) {
       [/(#neverworks|never works)/i, "https://dl.dropbox.com/s/zl692ugzfv3e4s6/bullw.but.that.trick.never.works.mp3"],
 
       // star wars
-      [/impressive/i, "https://dl.dropbox.com/s/dw5pexa9yxfr65e/vader.impressive.mp3"]
+      [/impressive/i, "https://dl.dropbox.com/s/dw5pexa9yxfr65e/vader.impressive.mp3"],
 
       // wilhelm scream 
       [/scream|wilhelm/i, "https://dl.dropboxusercontent.com/u/6926437/WilhelmScream_vbr.mp3"]
@@ -164,7 +164,11 @@ DropMachine.prototype = {
   },
 
   playMatches:function (messages) {
-    new AudioPlayer(this.matchMessage(messages)).playAll();
+    try {
+      new AudioPlayer(this.matchMessage(messages)).playAll();
+    } catch (e) {
+      alert(e.message + " @ " + e.stack);
+    }
   }
 };
 
